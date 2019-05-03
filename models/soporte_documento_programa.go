@@ -10,7 +10,7 @@ import (
 )
 
 type SoporteDocumentoPrograma struct {
-	Id                int                `orm:"column(id);pk"`
+	Id                int                `orm:"column(id);pk;auto"`
 	Ente              int                `orm:"column(ente)"`
 	Documento         int                `orm:"column(documento)"`
 	DocumentoPrograma *DocumentoPrograma `orm:"column(documento_programa);rel(fk)"`

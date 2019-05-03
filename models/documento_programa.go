@@ -10,7 +10,7 @@ import (
 )
 
 type DocumentoPrograma struct {
-	Id                    int                    `orm:"column(id);pk"`
+	Id                    int                    `orm:"column(id);pk;auto"`
 	Activo                bool                   `orm:"column(activo)"`
 	NumeroOrden           float64                `orm:"column(numero_orden);null"`
 	TipoDocumentoPrograma *TipoDocumentoPrograma `orm:"column(tipo_documento_programa);rel(fk)"`
